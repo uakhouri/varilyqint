@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
+  margin-left: 15ex;
+  margin-right: 15ex;
+  height: min-content;
+  /* background-color: cyan; */
+}
+.Inputbar {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  display: block;
+  margin-top: 3ex;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  background: rgb(193, 182, 231);
+  color: rgb(152, 99, 187);
+  border-end-end-radius: inherit;
+}
+.AlbHead {
+  font-size: 1.2rem;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: -3.5ex;
+  margin-top: 2ex;
+  padding: 2%;
+  text-indent: -2ex;
+}
+.textBoxes {
+  width: 100%;
+  margin-top: 5%;
+  /* margin-left: 15ex; */
+  /* background-color: sienna; */
+  display: grid;
+  grid-template-columns: 3rem, 1fr, 3rem;
+  grid-template-rows: 3rem;
+  margin-bottom: 2ex;
+  padding-left: 0%;
+}
+.Imagediv {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  /* background-color: springgreen; */
+  width: fit-content;
+  margin-right: 3ex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Imagepos {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  width: 3rem;
+  height: 3rem;
+  /* background-color: slateblue; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.LinkandText {
+  /* background-color: teal; */
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: repeat(2, fit-content);
+  text-align: left;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.textin {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  /* background-color: red; */
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  line-height: 1.235;
+  font-weight: 500;
+  margin-top: 0px;
+  text-align: left;
+  position: absolute;
+  left: 22ex;
 }
-
-.App-link {
-  color: #61dafb;
+.LinkA {
+  /* background-color: royalblue; */
+  margin-top: 32px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  position: absolute;
+  left: 24ex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.random {
+  grid-column: 3/4;
+  grid-row: 1/-1;
+  width: min-content;
+  height: 100%;
+  /* background-color: blueviolet; */
+  margin-top: -6px;
+  position: absolute;
+  right: 13ex;
 }
